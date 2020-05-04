@@ -1,0 +1,461 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #71c3ff;
+}
+
+#container { 
+	position:relative;
+}
+
+#body-content,#accept-challenge, #result {
+	position:absolute;
+	top:0;
+	left:0;
+	right: 0;
+	z-index:1;
+}
+
+header {
+	display:flex;
+	align-items:center;
+	padding:12px;
+	background-color:#71c3ff;
+	border-bottom:3px solid #fff;
+}
+
+video{
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
+	object-fit: cover;
+	opacity: 0.5;}
+
+
+
+	#logo {
+		flex-grow:1;
+	}
+
+	#aff-ph{
+		width: 300px;
+		height: 80px;
+	}
+
+	.nav-bttn {
+		font-family: 'Raleway';
+		letter-spacing:0.2px;
+		padding:8px;
+		background-color:#a4dcff;
+		color:#fff;
+		border: 2px solid #a4dcff;
+		border-radius:24px;
+		text-transform: uppercase;
+		font-weight:bold;
+	}
+
+	.nav-bttn:hover{
+		background-color:#fff;
+		color:#a4dcff;
+		border:2px solid #fff;
+	}
+
+	#accept-challenge{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 120px;
+		border-radius: 40px;
+		background-color: rgba(255,255,255, 0.9);
+		padding: 30px;
+	}
+
+	#no-more-challenges{
+		font-size: 30px;
+		color: #71c3ff;
+		text-align: center;
+		font-weight: bold;
+		padding: 10px;
+	}
+
+	#ch-text{
+		font-size: 30px;
+		text-align: center;
+		color:#71c3ff;
+	}
+
+	#text-challenge{
+		text-align: center;
+		font-size: 28px;
+		color: #71c3ff;
+		background-color: #fff;
+		padding: 12px;
+		margin-top: 0;
+	}
+
+	#book-title{
+		text-align: center;
+		color:#71c3ff;
+		font-weight: bold;
+		padding:20px;
+		font-size: 40px;
+	}
+
+	#book-author{
+		text-align: center;
+		color:#71c3ff;
+		font-size: 20px;
+
+	}
+
+	#accept, #refuz{
+		width:120px;
+		border:2px solid #71c3ff;
+		background-color: #71c3ff;
+		padding: 8px;
+		margin: 30px;
+		font-size: 18px;
+		color:#fff;
+		border-radius: 30px;
+		font-weight: bold;
+	}
+
+	#accept:hover{
+		background-color: #0084D8;
+		border-color: #0084D8;
+	}
+
+	#refuz{
+		background-color: #f76363;
+		border-color: #ff4c4c;
+	}
+
+	#refuz:hover{
+		background-color: #ff4c4c;
+	}
+
+	#body-content{
+		display: none;
+	}
+
+	#test-container{
+		margin: 30px;
+		border-radius: 40px;
+		background-color: rgba(255,255,255, 0.7);
+		padding: 30px;
+		border:3px solid #71c3ff;
+	}
+
+	#q-columns{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	#col1{
+		text-align: center;
+		flex-basis: 48%;
+		flex-grow: 0;
+		flex-shrink: 0;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#col2{
+		text-align: center;
+		flex-basis: 48%;
+		flex-grow: 0;
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#flex-fin{
+
+		display: flex;
+		justify-content: center;
+	}
+
+
+	input[type="text"]{
+		width:500px;
+		border-radius: 20px;
+		padding: 6px 15px;
+		background-color: #8ac3c294;
+		color: blue;
+		opacity: 0.6;
+		border: 1px solid #0084D8;
+		font-size: 14px;
+
+	}
+
+	input[type="submit"]{
+		margin:12px;
+		margin-top: 22px;
+		width:150px;
+		height: 50px;
+		border-radius: 40px;
+		padding: 8px 15px;
+		background-color: #71c3ff;
+		color:#fff;
+		border: 2px solid #71c3ff;
+		font-size: 18px;
+		font-weight: bold;
+
+	}
+
+	input[type="submit"]:hover{
+		background-color: #0084D8;
+		border: 2px solid #0084D8;
+
+	}
+
+	#result{
+		display: none;
+		align-items: center;
+		flex-direction: column;
+		background-color: rgba(255,255,255,0.9);
+		border-radius: 30px;
+		margin: 30px;
+		padding: 30px;
+
+	}
+
+	#scor{
+		font-size: 40px;
+		font-weight: bold;
+		color: #71c3ff;
+		text-align: center;
+	}
+
+	#rezultat{
+		font-size: 30px;
+		color: #71c3ff;
+		text-align: center;
+		font-weight: bold;
+		padding: 10px;
+	}
+
+    #answers-container{
+    	display: none;
+    }
+
+	.answers{
+		color: #71c3ff;
+		text-align: center;
+		padding: 10px;
+	}
+
+	#medalie-img{
+		margin-top: 20px;
+		width: 400px;
+		height: 400px;
+		background-size: contain;
+		border-radius: 10px;
+	}
+
+	@media only screen and (max-width: 374px){
+
+		header {
+			flex-direction: column;
+		}
+
+		#accept-challenge{
+			margin: 40px 20px;
+		}
+
+		#book-title{
+			padding:12px;
+			font-size: 25px;
+		}
+
+		#buttons{
+			display: flex;
+			flex-direction: column;
+		}
+
+		#accept, #refuz{
+			margin:10px;
+		}
+
+		#test-container{
+			margin: 15px;
+		}
+
+		#q-columns{
+			flex-direction: column;
+		}
+
+		#col1, #col2{
+			flex-basis: 28%;
+		}
+
+		input[type="text"]{
+			width:200px;
+		}
+
+		#medalie-img{
+			width: 200px;
+			height: 200px;
+		}
+	}
+
+	@media only screen and (min-width: 375px) and (max-width: 479px) {
+
+		header {
+			flex-direction: column;
+		}
+
+
+		#aff-ph{
+			width: 375px;
+			height: 100px;
+		}
+
+		#accept-challenge{
+			margin: 80px 20px 40px;
+		}
+
+		#book-title{
+			padding:12px;
+			font-size: 25px;
+		}
+
+		#buttons{
+			display: flex;
+			flex-direction: column;
+		}
+
+		#accept, #refuz{
+			margin: 10px;
+		}
+
+		#test-container{
+			margin: 15px;
+		}
+
+		#q-columns{
+			flex-direction: column;
+		}
+
+		#col1,#col2{
+			flex-basis: 28%;
+		}
+
+		input[type="text"]{
+			width:200px;
+		}
+
+		#medalie-img{
+			width: 250px;
+			height: 250px;
+		}
+	}
+
+	@media only screen and (min-width: 480px) and (max-width: 619px){
+
+		#accept-challenge{
+			margin: 100px 20px 40px;
+		}
+
+		#text-challenge{
+			font-size: 40px;
+		}
+
+		#book-title{
+			padding:12px;
+			font-size: 33px;
+		}
+
+		#book-author{
+			font-size: 25px;
+		}
+
+		#accept, #refuz{
+			margin: 20px 10px;
+		}
+
+		#body-content{
+			display: none;
+		}
+
+		#test-container{
+			margin: 15px;
+		}
+
+		#q-columns{
+			flex-direction: column;
+		}
+
+		#col1,#col2{
+			flex-basis: 28%;
+		}
+
+		input[type="text"]{
+			width:340px;
+		}
+
+		#medalie-img{
+			width: 280px;
+			height: 280px;
+		}
+	}
+
+	@media only screen and (min-width: 620px) and (max-width: 1199px){
+
+		.nav-bttn {
+			margin-right:20px;
+		}
+
+		#accept-challenge{
+			margin: 130px 20px 40px;
+		}
+
+		#ch-text{
+			font-size: 40px;
+		}
+
+		#text-challenge{
+			font-size: 40px;
+		}
+
+		#book-title{
+			padding:12px;
+			font-size: 42px;
+		}
+
+		#book-author{
+			font-size: 28px;
+		}
+
+
+		#accept, #refuz{
+			margin: 20px 10px;
+		}
+
+		#test-container{
+			margin: 15px;
+		}
+
+		#q-columns{
+			flex-direction: column;
+		}
+
+		#col1,#col2{
+			flex-basis: 28%;
+		}
+
+		input[type="text"]{
+			width:480px;
+		}
+	}

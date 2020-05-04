@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>BookFeelings | Questions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="challenge.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+   <div id="logo">
+    <a href="index.html"> 
+      <img src="Media/Logo.png" id="aff-ph"/>
+    </a>
+  </div>
+
+   <div id="bttns-container">
+
+     <a href="challenge.html">
+      <button class="nav-bttn">Provocari</button>
+    </a>
+   </div>
+ </header>
+ 
+ <div id="container">
+  <video autoplay playsinline muted loop id="video">
+    <source src="Media/Background.webm" type="video/webm"/>
+  </video>
+  <div id="accept-challenge">
+    <div id="no-more-challenges">Din pacate nu mai avem provocari pentru tine!</div>
+    <div id='ch-text'>Provocarea noastra este:</div>
+    <div id="book-title"></div>
+    <div id="book-author"></div>
+    <div id='buttons'>
+      <button type="button" id='accept' onclick="acceptChallenge()">ACCEPT</button>
+      <button type="button" id='refuz' onclick="anotherChallenge()">REFUZ</button>
+    </div>
+  </div>
+
+  <div id="body-content">
+    <h1 id="text-challenge"></h1>
+    <div id="test-container">
+      <form id='test' method = "GET">
+        <div id='q-columns'>
+          <div id="col1">
+            <label for="answer1" class="lab"></label><br>
+            <input type="text" class="ans" name="answer1"><br>
+            <label for="answer2" class="lab"></label><br>
+            <input type="text" class="ans" name="answer2"><br>
+            <label for="answer3" class="lab"></label><br>
+            <input type="text" class="ans" name="answer3"><br>
+            <label for="answer4" class="lab"></label><br>
+            <input type="text" class="ans" name="answer4"><br>
+          </div>
+          <div id="col2">
+            <label for="answer5" class="lab"></label><br>
+            <input type="text" class="ans" name="answer5"><br>
+            <label for="answer6" class="lab"></label><br>
+            <input type="text" class="ans" name="answer6"><br>
+            <label for="answer7" class="lab"></label><br>
+            <input type="text" class="ans" name="answer7"><br>
+            <label for="answer8" class="lab"></label><br>
+            <input type="text" class="ans" name="answer8"><br>
+          </div>
+        </div>
+        <div id="flex-fin">
+         <input type="submit" value="FINALIZEAZA" onclick="finalChallenge()"></div>
+       </form>
+       
+     </div>
+   </div>
+   <div id="result">
+    <div id="scor"></div>
+    <div id="rezultat"></div>
+    <div id="medalie">
+      <img id="medalie-img" src/>
+    </div>
+    <div id="answers-container">
+      <h2 class="answers">Raspunsurile corecte erau:</h2>
+      <div class="answers"></div>
+      <div class="answers"></div>
+      <div class="answers"></div>
+      <div class="answers"></div>
+      <div class="answers"></div>
+      <div class="answers"></div>
+      <div class="answers"></div>
+      <div class="answers"></div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<script src="challenge.js"></script>
+</html>

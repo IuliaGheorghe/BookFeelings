@@ -1,0 +1,146 @@
+body{
+	margin: 0;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	background-color: #C6AFCC;
+}
+
+a{
+	text-decoration: none;
+}
+
+#menu{
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+}
+
+#logo-div{
+	display: flex;
+	align-items: center;
+}
+
+
+span{
+	margin:15px;
+}
+
+span a{
+
+	font-family: 'Montserrat';
+	color:#fff;
+	font-size: 18px;
+}
+
+.logo{
+
+	font-family: 'Montserrat';
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	padding: 20px;
+}
+
+span a:hover{
+
+    color:#84548F;
+	/*border-bottom:3px solid purple;*/
+}
+
+#first{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0;
+	height: 650px;
+	background-image: url('https://cdn.pixabay.com/photo/2018/09/04/10/06/man-3653346_960_720.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.despre-crez{
+	padding-top: 50px;
+}
+
+
+footer{
+
+   font-family: 'Montserrat';
+   font-size: 14px;
+   line-height: 32px;
+	padding: 60px;
+	text-align: center;
+	color: #fff;
+	background-color: #84548F;
+}
+
+.text{
+	text-align: center;
+}
+
+#content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom:70px;
+}
+
+label{
+	color: #84548F;
+	font-size: 30px;
+	padding: 10px;
+}
+
+input{
+	font-size: 25px;
+	color: #84548F;
+	margin:15px;
+	padding:5px;
+	border-radius: 5px;
+	border: 1px solid #84548F;
+
+}
+
+button{
+
+   font-family: 'Montserrat';
+	background-color: #fff;
+	color:#84548F;
+	border: 2px solid #84548F;
+	border-radius: 20px;
+	padding: 15px 25px;
+	font-size: 20px;
+}
+
+button:hover{
+	color:#fff;
+	background-color: #84548F;
+}
+
+form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+#options{
+	display: flex;
+	
+}
